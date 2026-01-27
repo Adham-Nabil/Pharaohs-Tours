@@ -1,0 +1,818 @@
+export const tours = [
+  {
+    id: 1,
+    title: "Pyramids of Giza & Sphinx Adventure",
+    destination: "Cairo, Egypt",
+    price: 299,
+    duration: "3 Days / 2 Nights",
+    rating: 4.8,
+    images: [
+      "https://plus.unsplash.com/premium_photo-1694475060706-4744c3554b1f?q=80&w=911&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "Embark on an unforgettable journey to the ancient wonders of Egypt. Explore the iconic Pyramids of Giza, marvel at the Great Sphinx, and delve into the rich history of one of the world's most fascinating civilizations.",
+    hotelInfo: {
+      name: "Pyramids View Hotel",
+      location: "Giza, Egypt",
+    },
+    packageInfo: {
+      type: "Full Package with Meals",
+    },
+    highlights: [
+      "Guided tour of the Pyramids of Giza",
+      "Close encounter with the Great Sphinx",
+      "Visit to the Egyptian Museum",
+      "Traditional Egyptian lunch",
+      "Professional Egyptologist guide",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Hurghada",
+        dateRange: "20 Jan 2026 – 20 Mar 2026",
+        board: "Half Board",
+        roomType: "Double Room",
+        transportation: "No transfers",
+        price: 40,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Upgrade to All-Inclusive Board",
+      "Private Airport Transfers",
+      "Guided Excursions",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 2,
+    title: "Old Cairo & Khan El Khalili Cultural Sprint",
+    destination: "Cairo, Egypt",
+    price: 189,
+    duration: "2 Days / 1 Night",
+    rating: 4.6,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "Accelerate your cultural immersion through Old Cairo’s layered history. Walk through Islamic and Coptic landmarks, then close the loop with a high-energy stroll through Khan El Khalili, where bargaining is basically a national sport.",
+    hotelInfo: {
+      name: "Downtown Heritage Inn",
+      location: "Downtown Cairo, Egypt",
+    },
+    packageInfo: {
+      type: "Guided Package",
+    },
+    highlights: [
+      "Walking tour of Old Cairo",
+      "Khan El Khalili bazaar experience",
+      "Stops at historic mosques and churches",
+      "Street food tasting session",
+      "Local guide with insider context",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Cairo",
+        dateRange: "05 Feb 2026 – 30 Apr 2026",
+        board: "Bed & Breakfast",
+        roomType: "Double Room",
+        transportation: "No transfers",
+        price: 189,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Private guided tour",
+      "Nile dinner cruise add-on",
+      "Airport transfers",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 3,
+    title: "Egyptian Museum + Nile Dinner Cruise Combo",
+    destination: "Cairo, Egypt",
+    price: 259,
+    duration: "2 Days / 1 Night",
+    rating: 4.7,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "Optimize your Cairo experience with a daytime deep-dive into Egypt’s most iconic artifacts, then pivot to an evening Nile cruise with dinner and live entertainment. History + vibes, the classic KPI stack.",
+    hotelInfo: {
+      name: "Nile Horizon Hotel",
+      location: "Garden City, Cairo, Egypt",
+    },
+    packageInfo: {
+      type: "Full Package with Meals",
+    },
+    highlights: [
+      "Guided visit to the Egyptian Museum",
+      "Priority entry (where available)",
+      "Nile dinner cruise with show",
+      "Hotel pickup and drop-off",
+      "Curated cultural briefing",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Cairo",
+        dateRange: "10 Jan 2026 – 15 May 2026",
+        board: "Half Board",
+        roomType: "Double Room",
+        transportation: "Shared transfers",
+        price: 259,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Private transfers",
+      "Upgrade to 5-star cruise option",
+      "Add a morning felucca ride",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 4,
+    title: "Citadel, Alabaster Mosque & City View Daybreak",
+    destination: "Cairo, Egypt",
+    price: 219,
+    duration: "3 Days / 2 Nights",
+    rating: 4.5,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "A high-impact Cairo itinerary centered on the Citadel and its skyline-level views. You’ll get architecture, history, and strategic photo ops without wasting time on low-value detours.",
+    hotelInfo: {
+      name: "Citadel View Suites",
+      location: "Islamic Cairo, Egypt",
+    },
+    packageInfo: {
+      type: "Guided Package",
+    },
+    highlights: [
+      "Visit to Saladin Citadel",
+      "Tour of the Mosque of Muhammad Ali",
+      "Panoramic city viewpoint stop",
+      "Local lunch at a heritage spot",
+      "Professional guide support",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Cairo",
+        dateRange: "25 Jan 2026 – 25 Jun 2026",
+        board: "Bed & Breakfast",
+        roomType: "Double Room",
+        transportation: "No transfers",
+        price: 219,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Private car + driver",
+      "Add Khan El Khalili evening visit",
+      "Photography-focused guide",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 5,
+    title: "Saqqara, Memphis & Dahshur Pyramid Circuit",
+    destination: "Cairo, Egypt",
+    price: 329,
+    duration: "3 Days / 2 Nights",
+    rating: 4.9,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "For people who want pyramids without the crowds and with more historical bandwidth. This circuit hits Saqqara’s Step Pyramid, Memphis’ ancient capital footprint, and Dahshur’s iconic Bent and Red Pyramids.",
+    hotelInfo: {
+      name: "Sands & Stones Resort",
+      location: "Giza, Egypt",
+    },
+    packageInfo: {
+      type: "Full Package with Meals",
+    },
+    highlights: [
+      "Saqqara Step Pyramid guided visit",
+      "Memphis open-air museum stop",
+      "Dahshur Bent & Red Pyramid tour",
+      "Egyptologist-led historical context",
+      "Comfortable AC transport",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Cairo",
+        dateRange: "01 Feb 2026 – 31 Jul 2026",
+        board: "Half Board",
+        roomType: "Double Room",
+        transportation: "Private transfers",
+        price: 329,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Upgrade to All-Inclusive Board",
+      "Private sunrise pyramid access (where permitted)",
+      "Luxury vehicle upgrade",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 6,
+    title: "Cairo Food, Coffee & Hidden Gems Walkthrough",
+    destination: "Cairo, Egypt",
+    price: 149,
+    duration: "1 Day",
+    rating: 4.4,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "A curated, street-level Cairo experience focused on food, cafes, and low-key spots most tourists miss. It’s basically a delicious audit of the city’s best everyday flavors.",
+    hotelInfo: {
+      name: "City Center Boutique Hotel",
+      location: "Downtown Cairo, Egypt",
+    },
+    packageInfo: {
+      type: "Experience Package",
+    },
+    highlights: [
+      "Street food crawl (savory + sweet)",
+      "Classic Egyptian coffeehouse stop",
+      "Neighborhood walk with local context",
+      "Market snack tasting",
+      "Guide-led recommendations list",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Cairo",
+        dateRange: "15 Jan 2026 – 31 Dec 2026",
+        board: "No Meals",
+        roomType: "N/A",
+        transportation: "No transfers",
+        price: 149,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Private tour upgrade",
+      "Add a rooftop dinner reservation",
+      "Include hotel pickup/drop-off",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 7,
+    title: "Alexandria Classics: Library, Citadel & Corniche Views",
+    destination: "Alexandria, Egypt",
+    price: 239,
+    duration: "2 Days / 1 Night",
+    rating: 4.7,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "A high-ROI Alexandria starter kit. Hit the Bibliotheca Alexandrina for modern cultural depth, pivot to Qaitbay Citadel for coastal history, and wrap with a Corniche stroll that basically sells itself.",
+    hotelInfo: {
+      name: "Corniche Seaview Hotel",
+      location: "Al Montazah, Alexandria, Egypt",
+    },
+    packageInfo: {
+      type: "Guided Package",
+    },
+    highlights: [
+      "Visit to Bibliotheca Alexandrina",
+      "Tour of Qaitbay Citadel",
+      "Corniche scenic walk and photo stops",
+      "Local seafood lunch option",
+      "Professional guide support",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Alexandria",
+        dateRange: "01 Feb 2026 – 30 Jun 2026",
+        board: "Bed & Breakfast",
+        roomType: "Double Room",
+        transportation: "No transfers",
+        price: 239,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Private guided tour",
+      "Add Montaza Palace Gardens",
+      "Private transfers from Cairo",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 8,
+    title: "Montaza Gardens & Royal Coastline Escape",
+    destination: "Alexandria, Egypt",
+    price: 199,
+    duration: "2 Days / 1 Night",
+    rating: 4.5,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "A calm, scenery-first Alexandria plan designed for maximum coast and minimum chaos. Montaza Gardens delivers the greenery, the shoreline delivers the mood, and you get a clean reset from Cairo’s... everything.",
+    hotelInfo: {
+      name: "Montaza Bay Resort",
+      location: "Montaza, Alexandria, Egypt",
+    },
+    packageInfo: {
+      type: "Relaxation Package",
+    },
+    highlights: [
+      "Montaza Palace Gardens visit",
+      "Coastal viewpoints and beach access (where available)",
+      "Sunset Corniche stop",
+      "Optional cafe and dessert tasting",
+      "Chill itinerary with flexible pacing",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Alexandria",
+        dateRange: "15 Jan 2026 – 15 Sep 2026",
+        board: "Half Board",
+        roomType: "Double Room",
+        transportation: "No transfers",
+        price: 199,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Seaview room upgrade",
+      "Private driver for the day",
+      "Add a yacht cruise add-on",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 9,
+    title: "Roman Alexandria: Catacombs, Pompey’s Pillar & Kom El Shoqafa",
+    destination: "Alexandria, Egypt",
+    price: 269,
+    duration: "3 Days / 2 Nights",
+    rating: 4.8,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "A history-forward Alexandria program focused on the Greco-Roman layer of the city. Expect underground catacombs, monumental columns, and enough ancient context to make your group chat dangerously educational.",
+    hotelInfo: {
+      name: "Mediterranean Gate Hotel",
+      location: "Alexandria City Center, Egypt",
+    },
+    packageInfo: {
+      type: "Full Package with Meals",
+    },
+    highlights: [
+      "Catacombs of Kom El Shoqafa tour",
+      "Pompey’s Pillar visit",
+      "Greco-Roman Museum stop (where available)",
+      "Guided historical storytelling",
+      "Comfortable AC transport",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Alexandria",
+        dateRange: "01 Mar 2026 – 31 Oct 2026",
+        board: "Half Board",
+        roomType: "Double Room",
+        transportation: "Shared transfers",
+        price: 269,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Private Egyptologist guide",
+      "Add Abu Mena day trip (where feasible)",
+      "Luxury vehicle upgrade",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 10,
+    title: "Alexandria Seafood Trail + Old Market Walk",
+    destination: "Alexandria, Egypt",
+    price: 159,
+    duration: "1 Day",
+    rating: 4.4,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "This one is for people who travel with their stomach in the driver’s seat. You’ll do a guided seafood-focused tasting route, hit local markets, and leave with a short list of places you’ll swear were ‘hidden’ even though locals go daily.",
+    hotelInfo: {
+      name: "Harbor Boutique Stay",
+      location: "Anfushi, Alexandria, Egypt",
+    },
+    packageInfo: {
+      type: "Experience Package",
+    },
+    highlights: [
+      "Seafood tasting route (multiple stops)",
+      "Old market walk with local guide",
+      "Dessert and cafe stop",
+      "Vendor interaction and bargaining tips",
+      "Neighborhood photo ops",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Alexandria",
+        dateRange: "20 Jan 2026 – 31 Dec 2026",
+        board: "No Meals",
+        roomType: "N/A",
+        transportation: "No transfers",
+        price: 159,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Private tour upgrade",
+      "Add hotel pickup/drop-off",
+      "Upgrade to premium seafood set menu",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 11,
+    title: "Sunrise Coast & Culture: Citadel, Beaches & Café Stops",
+    destination: "Alexandria, Egypt",
+    price: 289,
+    duration: "3 Days / 2 Nights",
+    rating: 4.6,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "A balanced Alexandria itinerary that blends landmarks with coastal downtime. Expect a structured morning schedule, a flexible afternoon coast window, and curated café stops that keep the energy up without turning this into a marathon.",
+    hotelInfo: {
+      name: "Seabreeze Corniche Suites",
+      location: "Sidi Gaber, Alexandria, Egypt",
+    },
+    packageInfo: {
+      type: "Full Package with Meals",
+    },
+    highlights: [
+      "Qaitbay Citadel sunrise visit",
+      "Corniche scenic stops",
+      "Beach downtime block (where available)",
+      "Café hop with local favorites",
+      "Guide-led cultural context",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Alexandria",
+        dateRange: "01 Feb 2026 – 30 Nov 2026",
+        board: "Bed & Breakfast",
+        roomType: "Double Room",
+        transportation: "No transfers",
+        price: 289,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Seaview room upgrade",
+      "Private transfers from/to Cairo",
+      "Add Bibliotheca Alexandrina visit",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 12,
+    title: "Aswan Essentials: Philae Temple & Nubian Village Experience",
+    destination: "Aswan, Egypt",
+    price: 279,
+    duration: "2 Days / 1 Night",
+    rating: 4.8,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "A compact Aswan itinerary designed for maximum cultural impact. Visit the iconic Philae Temple, then shift into a Nubian Village experience with local storytelling, color, and calm vibes that Cairo forgot existed.",
+    hotelInfo: {
+      name: "Nile Pearl Hotel",
+      location: "Aswan, Egypt",
+    },
+    packageInfo: {
+      type: "Guided Package",
+    },
+    highlights: [
+      "Philae Temple guided visit",
+      "Motorboat ride to Agilkia Island",
+      "Nubian Village visit with local host",
+      "Traditional Nubian tea break",
+      "Professional guide support",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Aswan",
+        dateRange: "01 Feb 2026 – 31 May 2026",
+        board: "Bed & Breakfast",
+        roomType: "Double Room",
+        transportation: "Shared transfers",
+        price: 279,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Private guide and boat",
+      "Sunset felucca add-on",
+      "Airport transfers",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 13,
+    title: "Abu Simbel Sunrise Run + Aswan City Highlights",
+    destination: "Aswan, Egypt",
+    price: 349,
+    duration: "3 Days / 2 Nights",
+    rating: 4.9,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "This is the flagship move: Abu Simbel at sunrise. You’ll handle the early start, get rewarded with one of Egypt’s most iconic temples, then debrief back in Aswan with the city’s key sites and downtime baked in.",
+    hotelInfo: {
+      name: "Desert Sun Aswan Resort",
+      location: "Nile Corniche, Aswan, Egypt",
+    },
+    packageInfo: {
+      type: "Full Package with Meals",
+    },
+    highlights: [
+      "Abu Simbel sunrise excursion",
+      "Comfortable transport with breaks",
+      "Aswan High Dam stop",
+      "Philae Temple or Unfinished Obelisk (time permitting)",
+      "Guide-led historical context",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Aswan",
+        dateRange: "15 Jan 2026 – 30 Jun 2026",
+        board: "Half Board",
+        roomType: "Double Room",
+        transportation: "Private transfers",
+        price: 349,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Upgrade to flight option (subject to availability)",
+      "Private Egyptologist guide",
+      "Luxury vehicle upgrade",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 14,
+    title: "Nile Felucca Serenity + Botanical Garden Reset",
+    destination: "Aswan, Egypt",
+    price: 219,
+    duration: "2 Days / 1 Night",
+    rating: 4.6,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "A low-stress Aswan plan focused on the Nile itself. Felucca time, gentle island hopping, and a peaceful walk through the Botanical Garden. Minimal hustle, maximum mental refresh.",
+    hotelInfo: {
+      name: "Felucca Breeze Lodge",
+      location: "Elephantine Area, Aswan, Egypt",
+    },
+    packageInfo: {
+      type: "Relaxation Package",
+    },
+    highlights: [
+      "Felucca ride on the Nile",
+      "Botanical Garden visit",
+      "Island viewpoints and photo stops",
+      "Optional café stop on the Corniche",
+      "Flexible pacing with guided support",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Aswan",
+        dateRange: "01 Feb 2026 – 31 Dec 2026",
+        board: "Bed & Breakfast",
+        roomType: "Double Room",
+        transportation: "No transfers",
+        price: 219,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Private felucca and captain",
+      "Add Nubian Village stop",
+      "Sunset dinner on the Nile (where available)",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 15,
+    title: "Aswan Heritage Loop: Unfinished Obelisk, Museum & Souq Walk",
+    destination: "Aswan, Egypt",
+    price: 199,
+    duration: "1 Day",
+    rating: 4.5,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "A tight, high-signal itinerary for people who want substance without a multi-day commitment. Learn how ancient stonework actually worked, hit a museum for context, and finish with a souq walk where you can pretend you’re not buying spices.",
+    hotelInfo: {
+      name: "Aswan City Stay",
+      location: "Aswan City Center, Egypt",
+    },
+    packageInfo: {
+      type: "Experience Package",
+    },
+    highlights: [
+      "Unfinished Obelisk visit",
+      "Aswan Museum stop (where available)",
+      "Aswan Souq guided walk",
+      "Local snack and tea break",
+      "Short, efficient city routing",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Aswan",
+        dateRange: "20 Jan 2026 – 31 Dec 2026",
+        board: "No Meals",
+        roomType: "N/A",
+        transportation: "No transfers",
+        price: 199,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Private guide upgrade",
+      "Add felucca ride",
+      "Include hotel pickup/drop-off",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+  {
+    id: 16,
+    title: "Luxury Nile Edge: High Dam, Philae & Sunset Cruise",
+    destination: "Aswan, Egypt",
+    price: 399,
+    duration: "3 Days / 2 Nights",
+    rating: 4.9,
+    images: [
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+      "https://placehold.co/400x300/png",
+    ],
+    about:
+      "A premium Aswan package that blends headline sites with a controlled, comfortable flow. You’ll hit the High Dam and Philae Temple, then finish with a sunset cruise that makes you forget your inbox exists.",
+    hotelInfo: {
+      name: "Nile Crown Resort & Spa",
+      location: "Nile Corniche, Aswan, Egypt",
+    },
+    packageInfo: {
+      type: "Full Package with Meals",
+    },
+    highlights: [
+      "Aswan High Dam visit",
+      "Philae Temple guided tour",
+      "Sunset Nile cruise experience",
+      "Priority routing and comfort-first scheduling",
+      "Premium hotel stay",
+    ],
+    itinerary: [],
+    packages: [
+      {
+        location: "Aswan",
+        dateRange: "01 Feb 2026 – 30 Sep 2026",
+        board: "Half Board",
+        roomType: "Double Room",
+        transportation: "Private transfers",
+        price: 399,
+        currency: "USD",
+      },
+    ],
+    upgradeOptions: [
+      "Upgrade to All-Inclusive Board",
+      "Private Egyptologist guide",
+      "Add Abu Simbel day trip",
+    ],
+    childPolicy: [
+      "Children under 2 years: Free",
+      "Children 2-12 years: 50% discount",
+      "Children over 12: Full price",
+    ],
+  },
+];

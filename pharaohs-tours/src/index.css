@@ -1,0 +1,126 @@
+@import "tailwindcss";
+/* ================================
+   Tours Swiper – Brand Styling
+   ================================ */
+
+.tours-swiper {
+  --swiper-theme-color: #c9a24d; /* gold */
+}
+/* Pagination spacing */
+.tours-swiper .swiper-pagination {
+  bottom: 0 !important;
+  margin-top: 24px;
+  position: relative;
+}
+
+/* Pagination dots */
+.tours-swiper .swiper-pagination-bullet {
+  background: #c9a24d;
+  opacity: 0.3;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+}
+
+.tours-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Navigation arrows */
+.tours-swiper .swiper-button-next,
+.tours-swiper .swiper-button-prev {
+  color: #c9a24d;
+  width: 44px;
+  height: 44px;
+}
+
+.tours-swiper .swiper-button-next::after,
+.tours-swiper .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Optional: soften arrow background */
+.tours-swiper .swiper-button-next,
+.tours-swiper .swiper-button-prev {
+  background: rgba(11, 11, 11, 0.6); /* dark */
+  border-radius: 9999px;
+  padding: 0.5rem;
+  transition:
+    background 0.3s,
+    transform 0.3s;
+}
+
+.tours-swiper .swiper-button-next:hover,
+.tours-swiper .swiper-button-prev:hover {
+  background: rgba(11, 11, 11, 0.8);
+  transform: scale(1.05);
+}
+/* ================================
+   Testimonials Swiper – Brand Styling
+   ================================ */
+
+.testimonials-swiper {
+  --swiper-theme-color: #c9a24d; /* gold */
+}
+
+/* Pagination spacing */
+.testimonials-swiper .swiper-pagination {
+  bottom: 0 !important;
+  margin-top: 24px;
+  position: relative;
+}
+
+/* Pagination dots */
+.testimonials-swiper .swiper-pagination-bullet {
+  background: #c9a24d;
+  opacity: 0.3;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* ================================
+   Gallery Swiper – Card Styling
+   ================================ */
+
+.gallery-swiper {
+  --swiper-theme-color: #c9a24d; /* gold */
+}
+
+/* Pagination positioning INSIDE card */
+.gallery-swiper .swiper-pagination {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* Pagination bullets */
+.gallery-swiper .swiper-pagination-bullet {
+  background: #c9a24d;
+  opacity: 0.35;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px !important;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.gallery-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+::selection {
+  background-color: #c9a24d;
+  color: #0b0b0b;
+}
