@@ -46,21 +46,24 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-14 px-32 bg-[#FFFFFF]">
-      <div className="container mx-auto px-4">
+    <section
+      id="testimonials"
+      className="py-14 px-4 sm:px-6 lg:px-32 bg-[#FFFFFF]"
+    >
+      <div className="container mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#0B0B0B] mb-4">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#0B0B0B] mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-[#7A7A7A]">
+          <p className="text-[#7A7A7A] text-sm sm:text-base">
             Real travelers. Real stories. Verified reviews.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-          {/* Left: Rating Summary */}
-          <div className="bg-[#FFFFFF] rounded-2xl border border-black/10 p-8 shadow-sm">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+          {/* Left: Rating Summary (desktop only) */}
+          <div className="hidden lg:block bg-[#FFFFFF] rounded-2xl border border-black/10 p-8 shadow-sm">
             <div className="flex items-center gap-4 mb-6">
               <span className="text-5xl font-bold text-[#1F3A5F]">4.9</span>
               <div>
@@ -76,7 +79,6 @@ const TestimonialsSection = () => {
               </div>
             </div>
 
-            {/* Rating bars */}
             {["Service", "Value", "Organization"].map((label) => (
               <div key={label} className="mb-4">
                 <div className="flex justify-between text-sm text-[#7A7A7A] mb-1">
@@ -100,15 +102,15 @@ const TestimonialsSection = () => {
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
               }}
-              spaceBetween={24}
+              spaceBetween={20}
               slidesPerView={1}
               className="testimonials-swiper pb-12"
             >
               {testimonials.map((t, index) => (
                 <SwiperSlide key={index}>
-                  <div className="bg-[#FFFFFF] rounded-2xl border border-black/10 p-8 shadow-sm">
+                  <div className="bg-[#FFFFFF] rounded-2xl border border-black/10 p-6 sm:p-8 shadow-sm">
                     {/* Header */}
-                    <div className="flex items-center justify-between mb-6">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
                       <div className="flex items-center gap-4">
                         <img
                           src={t.avatar}
@@ -124,7 +126,7 @@ const TestimonialsSection = () => {
                       </div>
 
                       {t.verified && (
-                        <div className="flex items-center gap-2 text-sm text-[#1F3A5F] bg-[#1F3A5F]/10 px-3 py-1 rounded-full">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-[#1F3A5F] bg-[#1F3A5F]/10 px-3 py-1 rounded-full w-fit">
                           <BadgeCheck className="w-4 h-4" />
                           Verified Traveler
                         </div>
@@ -142,12 +144,12 @@ const TestimonialsSection = () => {
                     </div>
 
                     {/* Quote */}
-                    <p className="text-[#1F2937] mb-6 leading-relaxed">
+                    <p className="text-[#1F2937] mb-6 leading-relaxed text-sm sm:text-base">
                       “{t.quote}”
                     </p>
 
                     {/* Footer */}
-                    <div className="flex items-center justify-between text-sm text-[#7A7A7A]">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-sm text-[#7A7A7A]">
                       <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4 text-[#C9A24D]" />
                         {t.location} • {t.duration}

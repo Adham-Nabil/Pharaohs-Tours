@@ -14,6 +14,7 @@ const HeroSection = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
+      id="home"
     >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-[#0B0B0B]/60" />

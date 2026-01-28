@@ -109,7 +109,7 @@ const TourDetails = () => {
           <div className="lg:col-span-2 order-1 lg:order-1">
             {/* 1) Photo Gallery */}
             <div className="mb-12">
-              <div className="bg-white rounded-2xl shadow-md p-5">
+              <div className="bg-white rounded-2xl shadow-md p-4 sm:p-5">
                 {/* Header */}
                 <h2 className="text-lg font-semibold mb-4">Photo Gallery</h2>
 
@@ -122,14 +122,20 @@ const TourDetails = () => {
                     onSlideChange={(swiper) =>
                       setSelectedImageIndex(swiper.activeIndex)
                     }
-                    className="w-full h-105 gallery-swiper"
+                    className="
+          w-full
+          aspect-4/3
+          sm:aspect-video
+          lg:h-105
+          gallery-swiper
+        "
                   >
                     {tour.images.map((image, index) => (
                       <SwiperSlide key={index}>
                         <img
                           src={image}
                           alt={`${tour.title} ${index + 1}`}
-                          className="w-full h-105 object-cover"
+                          className="w-full h-full object-cover"
                         />
                       </SwiperSlide>
                     ))}
@@ -137,26 +143,31 @@ const TourDetails = () => {
                 </div>
 
                 {/* Thumbnails */}
-                <div className="mt-4 flex gap-3 overflow-x-auto pt-2">
+                <div className="mt-3 sm:mt-4 flex gap-2 sm:gap-3 overflow-x-auto pb-2">
                   {tour.images.map((image, index) => (
-                    <img
+                    <button
                       key={index}
-                      src={image}
-                      alt={`Thumbnail ${index + 1}`}
                       onClick={() => {
                         setSelectedImageIndex(index);
                         gallerySwiperRef.current?.slideTo(index);
                       }}
-                      className={`
-            w-24 h-20 object-cover rounded-lg cursor-pointer shrink-0
-            transition-all
-            ${
-              index === selectedImageIndex
-                ? "ring-2 ring-[#C9A24D]"
-                : "opacity-70 hover:opacity-100"
-            }
-          `}
-                    />
+                      className="shrink-0"
+                    >
+                      <img
+                        src={image}
+                        alt={`Thumbnail ${index + 1}`}
+                        className={`
+              w-20 h-16 sm:w-24 sm:h-20
+              object-cover rounded-lg
+              transition-all
+              ${
+                index === selectedImageIndex
+                  ? "ring-2 ring-[#C9A24D]"
+                  : "opacity-70 hover:opacity-100"
+              }
+            `}
+                      />
+                    </button>
                   ))}
                 </div>
               </div>
@@ -358,11 +369,6 @@ const TourDetails = () => {
               />
             </div>
           </div>
-        </div>
-
-        {/* RESPONSIVE: On mobile, Quick Booking Card moves BELOW main content */}
-        <div className="lg:hidden mt-8">
-          <QuickBookingCard tour={tour} onBook={() => setIsBookingOpen(true)} />
         </div>
       </main>
 
