@@ -107,7 +107,40 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-[#7A7A7A]">
-          <p>© 2025 Pharaohs Tours. All rights reserved.</p>
+          <p>
+            © 2025 Pharaohs Tours. All rights reserved. Developed by:{" "}
+            <a
+              href="https://adhamnabil.vercel.app/"
+              className="font-semibold transition-all duration-300 ease-out cursor-pointer text-[#C9A24D]"
+              target="_blank"
+            >
+              Adham Mohammed Nabil
+            </a>{" "}
+            /{" "}
+            <a
+              href="#"
+              className="font-semibold transition-all duration-300 ease-out cursor-pointer text-[#C9A24D]"
+              target="_blank"
+            >
+              Ahmed Essam
+            </a>{" "}
+            /{" "}
+            <a
+              href="https://www.linkedin.com/in/kholoud-eldmairy-b8a6102b0"
+              className="font-semibold transition-all duration-300 ease-out cursor-pointer text-[#C9A24D]"
+              target="_blank"
+            >
+              Kholoud Mostafa
+            </a>{" "}
+            /{" "}
+            <a
+              href="#"
+              className="font-semibold transition-all duration-300 ease-out cursor-pointer text-[#C9A24D]"
+              target="_blank"
+            >
+              Bayan
+            </a>
+          </p>
 
           <div className="flex items-center gap-6 mt-3 md:mt-0">
             <span className="hover:text-[#C9A24D] transition cursor-pointer">
